@@ -2,165 +2,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Inspiration Déco - Accueil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inspiration Déco</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f7f7f7;
+      background-color: #f4f4f4;
     }
-
     header {
       background-color: #ff9900;
       color: white;
       padding: 2rem;
       text-align: center;
     }
-
-    nav {
-      background-color: #e68a00;
-      text-align: center;
-      padding: 1rem 0;
-    }
-
     nav a {
+      margin: 0 1rem;
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
     }
-
-    .intro {
-      padding: 2rem;
-      text-align: center;
-      background-color: #fff8ef;
-    }
-
-    .intro h2 {
-      color: #333;
-    }
-
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
     }
-
-    .carte {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .card {
+      background: white;
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
-      text-decoration: none;
-      color: #333;
-      transition: transform 0.2s ease;
     }
-
-    .carte:hover {
-      transform: scale(1.03);
-    }
-
-    .carte img {
+    .card img {
       width: 100%;
-      height: 160px;
+      height: 200px;
       object-fit: cover;
     }
-
-    .carte h3 {
+    .card h3 {
       padding: 1rem;
       margin: 0;
-      font-size: 1.1rem;
-      background-color: #fafafa;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Inspiration Déco</h1>
-    <p>Idées & accessoires pour sublimer votre intérieur</p>
-  </header>
-
+<header>
+  <h1>Inspiration Déco</h1>
   <nav>
     <a href="index.html">Accueil</a>
-    <a href="index.html">Articles déco</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
   </nav>
+</header>
 
-  <section class="intro">
-    <h2>Transformez votre maison en un lieu qui vous inspire</h2>
-    <p>Explorez nos sélections tendances et trouvez les pièces parfaites pour chaque coin de votre intérieur.</p>
-  </section>
-
-  <section class="grid">
-    <a href="tapisserie.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1616628182507-6782bfc44626?auto=format&fit=crop&w=600&q=80" alt="Tapisseries">
-      <h3>Tapisseries murales</h3>
-    </a>
-    <a href="miroirs.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1618221680035-2722d6ec88bc?auto=format&fit=crop&w=600&q=80" alt="Miroirs">
-      <h3>Miroirs décoratifs</h3>
-    </a>
-    <a href="luminaires.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1560184897-dac7a1e719c7?auto=format&fit=crop&w=600&q=80" alt="Luminaires">
-      <h3>Luminaires</h3>
-    </a>
-    <a href="plantes.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a5?auto=format&fit=crop&w=600&q=80" alt="Plantes">
-      <h3>Plantes artificielles</h3>
-    </a>
-    <a href="cadres.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1616047003363-bfd5f1d86e0a?auto=format&fit=crop&w=600&q=80" alt="Cadres">
-      <h3>Cadres muraux</h3>
-    </a>
-    <a href="horloges.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1588885111629-920118e579b4?auto=format&fit=crop&w=600&q=80" alt="Horloges">
-      <h3>Horloges murales</h3>
-    </a>
-    <a href="coussins.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1598300054035-8d1f0eac2c09?auto=format&fit=crop&w=600&q=80" alt="Coussins">
-      <h3>Coussins & textiles</h3>
-    </a>
-    <a href="etagere.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1598300054112-9cf30b62deed?auto=format&fit=crop&w=600&q=80" alt="Étagères">
-      <h3>Étagères murales</h3>
-    </a>
-    <a href="vases.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1624433591775-63018da7e06c?auto=format&fit=crop&w=600&q=80" alt="Vases">
-      <h3>Vases & objets déco</h3>
-    </a>
-    <a href="table.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1585238342025-786ef7b54671?auto=format&fit=crop&w=600&q=80" alt="Table">
-      <h3>Décorations de table</h3>
-    </a>
-    <a href="guirlandes.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1603357466358-5c7b04c0e542?auto=format&fit=crop&w=600&q=80" alt="Guirlandes">
-      <h3>Guirlandes & LEDs</h3>
-    </a>
-    <a href="metal.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1595769816263-9b910be24d5e?auto=format&fit=crop&w=600&q=80" alt="Métal">
-      <h3>Déco murale en métal</h3>
-    </a>
-    <a href="stickers.html" class="carte">
-      <img src="https://images.unsplash.com/photo-1588854337221-1b6eadee171e?auto=format&fit=crop&w=600&q=80" alt="Stickers">
-      <h3>Stickers & autocollants</h3>
-    </a>
-  </section>
-
-  <footer>
-    &copy; 2025 Inspiration Déco – Tous droits réservés
-  </footer>
+<div class="grid">
+  
+    <div class="card">
+      <a href="miroirs-decoratifs.html">
+        <img src="https://source.unsplash.com/600x400/?miroirs-decoratifs" alt="Miroirs Decoratifs">
+        <h3>Miroirs Decoratifs</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="luminaires.html">
+        <img src="https://source.unsplash.com/600x400/?luminaires" alt="Luminaires">
+        <h3>Luminaires</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="coussins.html">
+        <img src="https://source.unsplash.com/600x400/?coussins" alt="Coussins">
+        <h3>Coussins</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="vases.html">
+        <img src="https://source.unsplash.com/600x400/?vases" alt="Vases">
+        <h3>Vases</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="rideaux.html">
+        <img src="https://source.unsplash.com/600x400/?rideaux" alt="Rideaux">
+        <h3>Rideaux</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="plantes-artificielles.html">
+        <img src="https://source.unsplash.com/600x400/?plantes-artificielles" alt="Plantes Artificielles">
+        <h3>Plantes Artificielles</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="cadres-photos.html">
+        <img src="https://source.unsplash.com/600x400/?cadres-photos" alt="Cadres Photos">
+        <h3>Cadres Photos</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="bougies-parfumees.html">
+        <img src="https://source.unsplash.com/600x400/?bougies-parfumees" alt="Bougies Parfumees">
+        <h3>Bougies Parfumees</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="horloges-murales.html">
+        <img src="https://source.unsplash.com/600x400/?horloges-murales" alt="Horloges Murales">
+        <h3>Horloges Murales</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="poufs-ottomans.html">
+        <img src="https://source.unsplash.com/600x400/?poufs-ottomans" alt="Poufs Ottomans">
+        <h3>Poufs Ottomans</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="etagères-murales.html">
+        <img src="https://source.unsplash.com/600x400/?etagères-murales" alt="Etagères Murales">
+        <h3>Etagères Murales</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="boites-rangement.html">
+        <img src="https://source.unsplash.com/600x400/?boites-rangement" alt="Boites Rangement">
+        <h3>Boites Rangement</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="tapis.html">
+        <img src="https://source.unsplash.com/600x400/?tapis" alt="Tapis">
+        <h3>Tapis</h3>
+      </a>
+    </div>
+</div>
 
 </body>
 </html>
