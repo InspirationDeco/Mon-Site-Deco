@@ -1,91 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rideaux - Inspiration Déco</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rideaux Élégants - Inspiration Déco</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
       margin: 0;
-      background-color: #f9f9f9;
     }
     header {
       background-color: #ff9900;
+      padding: 2rem;
       color: white;
-      padding: 1.5rem;
       text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
     .produits {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
-    .carte {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
+    .produit {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
-      padding-bottom: 1rem;
     }
-    .carte img {
-      width: 100%;
-      height: 220px;
+    .produit img {
+      max-width: 100%;
+      height: 200px;
       object-fit: cover;
+      border-radius: 8px;
     }
-    .carte h3 {
-      margin: 1rem 0 0.5rem;
-    }
-    .carte a {
+    .produit a {
       display: inline-block;
       margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: #ff9900;
-      color: white;
+      color: #ff9900;
       text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #333;
-      color: white;
-      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Rideaux</h1>
-  <p>Habillez vos fenêtres avec nos rideaux décoratifs et fonctionnels.</p>
-</header>
-
-<section class="produits">
-  <div class="carte">
-    <img src="https://source.unsplash.com/600x400/?rideaux" alt="Produit 1 de Rideaux">
-    <h3>Produit 1 de Rideaux</h3>
-    <a href="https://www.amazon.fr/dp/EXEMPLE1?tag=TONID" target="_blank">Voir sur Amazon</a>
-  </div>
-  <div class="carte">
-    <img src="https://source.unsplash.com/600x400/?rideaux" alt="Produit 2 de Rideaux">
-    <h3>Produit 2 de Rideaux</h3>
-    <a href="https://www.amazon.fr/dp/EXEMPLE2?tag=TONID" target="_blank">Voir sur Amazon</a>
-  </div>
-  <div class="carte">
-    <img src="https://source.unsplash.com/600x400/?rideaux" alt="Produit 3 de Rideaux">
-    <h3>Produit 3 de Rideaux</h3>
-    <a href="https://www.amazon.fr/dp/EXEMPLE3?tag=TONID" target="_blank">Voir sur Amazon</a>
-  </div>
-</section>
-
-<footer>
-  &copy; 2025 Inspiration Déco
-</footer>
-
+  <header>
+    <h1>Rideaux Élégants</h1>
+  </header>
+  <main>
+    <div class="produits">
+      <div class="produit">
+        <img src="https://source.unsplash.com/400x300/?rideaux,1" alt="Rideaux Élégants 1" />
+        <p>Produit 1</p>
+        <a href="#">Voir sur Amazon</a>
+      </div>
+      <div class="produit">
+        <img src="https://source.unsplash.com/400x300/?rideaux,2" alt="Rideaux Élégants 2" />
+        <p>Produit 2</p>
+        <a href="#">Voir sur Amazon</a>
+      </div>
+      <div class="produit">
+        <img src="https://source.unsplash.com/400x300/?rideaux,3" alt="Rideaux Élégants 3" />
+        <p>Produit 3</p>
+        <a href="#">Voir sur Amazon</a>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
