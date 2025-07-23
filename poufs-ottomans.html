@@ -1,74 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Poufs & Ottomans - Inspiration Déco</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      margin: 0;
-    }
-    header {
-      background-color: #ff9900;
-      padding: 2rem;
-      color: white;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .produits {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .produit {
-      background: white;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .produit img {
-      max-width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .produit a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #ff9900;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Poufs-Ottomans - Inspiration Déco</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Poufs & Ottomans</h1>
-  </header>
-  <main>
-    <div class="produits">
-      <div class="produit">
-        <img src="https://source.unsplash.com/400x300/?poufs-ottomans,1" alt="Poufs & Ottomans 1" />
-        <p>Produit 1</p>
-        <a href="#">Voir sur Amazon</a>
-      </div>
-      <div class="produit">
-        <img src="https://source.unsplash.com/400x300/?poufs-ottomans,2" alt="Poufs & Ottomans 2" />
-        <p>Produit 2</p>
-        <a href="#">Voir sur Amazon</a>
-      </div>
-      <div class="produit">
-        <img src="https://source.unsplash.com/400x300/?poufs-ottomans,3" alt="Poufs & Ottomans 3" />
-        <p>Produit 3</p>
-        <a href="#">Voir sur Amazon</a>
-      </div>
-    </div>
-  </main>
+    <header>
+        <h1>Poufs Ottomans</h1>
+        <nav><a href="index.html">Accueil</a></nav>
+    </header>
+    <main>
+        <section class="produits">
+            <div class="produit">
+                <img src="images/poufs-ottomans1.jpg" alt="Produit 1">
+                <p><a href="https://amzn.eu/d/9amy2yH" target="_blank">Produit 1</a></p>
+            </div>
+            <div class="produit">
+                <img src="images/poufs-ottomans2.jpg" alt="Produit 2">
+                <p><a href="https://amzn.eu/d/c6Pcpqw" target="_blank">Produit 2</a></p>
+            </div>
+            <div class="produit">
+                <img src="images/poufs-ottomans3.jpg" alt="Produit 3">
+                <p><a href="https://amzn.eu/d/eUQ96XP" target="_blank">Produit 3</a></p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
