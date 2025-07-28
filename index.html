@@ -1,114 +1,82 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inspiration Déco</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f7f3ef;
-      color: #333;
-    }
-    header {
-      padding: 1rem;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-    .menu-toggle {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      cursor: pointer;
-      font-size: 1.5rem;
-    }
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 3rem;
-      left: 1rem;
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      z-index: 1000;
-    }
-    .menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .menu ul li {
-      padding: 0.75rem 1.5rem;
-    }
-    .menu ul li a {
-      color: #333;
-      text-decoration: none;
-    }
-    .menu ul li a:hover {
-      color: #e27d60;
-    }
-    .banner {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      margin-top: 1rem;
-      border-radius: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <header>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="menu" id="menu">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="avis.html">Avis</a></li>
-      </ul>
-    </nav>
-    <div class="lang-switch" style="position: absolute; top: 1rem; right: 1rem;">
-      <a href="index.html">🇫🇷</a> | <a href="index-en.html">🇬🇧</a>
-    </div>
-    <h1 style="text-align:center">Bienvenue sur <span class="highlight">Inspiration Déco</span></h1>
-    <p class="intro" style="text-align:center">Explorez les plus belles idées de décoration pour votre intérieur.</p>
-    <img src="images/maison.jpg" alt="belle maison déco" class="banner" />
-  </header>  <main>
-    <section class="categories">
-      <h2>Nos Catégories Populaires</h2>
-      <div class="grid">
-        <a href="miroirs.html" class="card"><img src="images/miroirs.jpg" alt="miroirs" /><span>Miroirs décoratifs</span></a>
-        <a href="tapis.html" class="card"><img src="images/tapis.jpg" alt="tapis" /><span>Tapis modernes</span></a>
-        <a href="luminaires.html" class="card"><img src="images/luminaires.jpg" alt="luminaires" /><span>Luminaires</span></a>
-        <a href="coussins.html" class="card"><img src="images/coussins.jpg" alt="coussins" /><span>Coussins</span></a>
-        <a href="vases.html" class="card"><img src="images/vases.jpg" alt="vases" /><span>Vases design</span></a>
-        <a href="rideaux.html" class="card"><img src="images/rideaux.jpg" alt="rideaux" /><span>Rideaux élégants</span></a>
-        <a href="plantes.html" class="card"><img src="images/plantes.jpg" alt="plantes" /><span>Plantes artificielles</span></a>
-        <a href="cadres.html" class="card"><img src="images/cadres.jpg" alt="cadres" /><span>Cadres photo</span></a>
-        <a href="bougies.html" class="card"><img src="images/bougies.jpg" alt="bougies" /><span>Bougies parfumées</span></a>
-        <a href="horloges.html" class="card"><img src="images/horloges.jpg" alt="horloges" /><span>Horloges murales</span></a>
-        <a href="poufs.html" class="card"><img src="images/poufs.jpg" alt="poufs" /><span>Poufs & Ottomans</span></a>
-        <a href="etagere.html" class="card"><img src="images/etagere.jpg" alt="etagere" /><span>Étagères murales</span></a>
-        <a href="boites.html" class="card"><img src="images/boites.jpg" alt="boites" /><span>Boîtes de rangement</span></a>
-      </div>
-    </section><section class="newsletter">
-  <h3>Recevez nos idées déco inspirantes 💌</h3>
-  <form>
-    <input type="email" placeholder="Votre adresse email" required />
-    <button type="submit">S’inscrire</button>
-  </form>
-</section>
 
-  </main>  <footer>
-    <p style="text-align:center">© 2025 Inspiration Déco | Site personnel affilié Amazon</p>
-  </footer>  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script></body>
+  <!-- MENU HAMBURGER -->
+  <header>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="menu" id="menu">
+      <a href="index.html">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+      <a href="#avis">Avis</a>
+    </nav>
+  </header>
+
+  <!-- BANNIÈRE -->
+  <section class="hero">
+    <h1>Bienvenue sur Inspiration Déco</h1>
+    <p>Découvrez nos plus belles idées de décoration pour sublimer votre intérieur.</p>
+  </section>
+
+  <!-- CATÉGORIES -->
+  <section class="categories">
+    <h2>Nos catégories de décoration</h2>
+    <div class="grid">
+      <a href="miroirs.html"><img src="images/miroirs.jpg" alt="Miroirs">Miroirs</a>
+      <a href="tapis.html"><img src="images/tapis.jpg" alt="Tapis">Tapis</a>
+      <a href="luminaires.html"><img src="images/luminaires.jpg" alt="Luminaires">Luminaires</a>
+      <a href="coussins.html"><img src="images/coussins.jpg" alt="Coussins">Coussins</a>
+      <a href="vases.html"><img src="images/vases.jpg" alt="Vases">Vases</a>
+      <a href="rideaux.html"><img src="images/rideaux.jpg" alt="Rideaux">Rideaux</a>
+      <a href="plantes.html"><img src="images/plantes.jpg" alt="Plantes">Plantes</a>
+      <a href="cadres.html"><img src="images/cadres.jpg" alt="Cadres">Cadres</a>
+      <a href="bougies.html"><img src="images/bougies.jpg" alt="Bougies">Bougies</a>
+      <a href="horloge.html"><img src="images/horloge.jpg" alt="Horloge">Horloges</a>
+      <a href="poufs.html"><img src="images/poufs.jpg" alt="Poufs">Poufs</a>
+      <a href="etagere.html"><img src="images/etagere.jpg" alt="Étagères">Étagères</a>
+      <a href="boites.html"><img src="images/boites.jpg" alt="Boîtes">Boîtes</a>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="section">
+    <h2>À propos</h2>
+    <p>Inspiration Déco est une plateforme dédiée à la décoration intérieure. Notre mission est d’inspirer votre quotidien à travers des produits esthétiques, pratiques et accessibles.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Une question ? Une suggestion ? Écrivez-nous à <a href="mailto:inspirdeco@gmail.com">inspirdeco@gmail.com</a></p>
+  </section>
+
+  <!-- AVIS -->
+  <section id="avis" class="section">
+    <h2>Avis clients</h2>
+    <ul class="avis">
+      <li>“Super site, j’ai trouvé le miroir parfait !” — Marie L.</li>
+      <li>“Des idées originales et pas chères !” — Julien P.</li>
+      <li>“Navigation simple et agréable.” — Fatou D.</li>
+      <li>“Produits bien présentés, j’adore.” — Karim B.</li>
+      <li>“Excellent pour relooker son salon !” — Clara R.</li>
+    </ul>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
+
+</body>
 </html>
