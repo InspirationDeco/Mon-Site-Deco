@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,23 +9,22 @@
 <body>
   <header>
     <div class="topbar">
-      <span>🇫🇷 | <a href="index-en.html">🇬🇧</a></span>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="avis.html">Avis</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <a href="index.html">🇫🇷</a> | <a href="index-en.html">🇬🇧</a>
+      </div>
     </div>
     <h1>Bienvenue sur <span class="highlight">Inspiration Déco</span></h1>
     <p class="intro">Explorez les plus belles idées de décoration pour votre intérieur.</p>
     <img src="images/maison.jpg" alt="belle maison déco" class="banner" />
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="a-propos.html">À propos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="avis.html">Avis</a></li>
-    </ul>
-  </nav>
-
-  <main>
+  </header>  <main>
     <section class="categories">
       <h2>Nos Catégories Populaires</h2>
       <div class="grid">
@@ -44,19 +42,23 @@
         <a href="etagere.html" class="card"><img src="images/etagere.jpg" alt="etagere" /><span>Étagères murales</span></a>
         <a href="boites.html" class="card"><img src="images/boites.jpg" alt="boites" /><span>Boîtes de rangement</span></a>
       </div>
-    </section>
+    </section><section class="newsletter">
+  <h3>Recevez nos idées déco inspirantes 💌</h3>
+  <form>
+    <input type="email" placeholder="Votre adresse email" required />
+    <button type="submit">S’inscrire</button>
+  </form>
+</section>
 
-    <section class="newsletter">
-      <h3>Recevez nos idées déco inspirantes 💌</h3>
-      <form>
-        <input type="email" placeholder="Votre adresse email" required />
-        <button type="submit">S’inscrire</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
+  </main>  <footer>
     <p>© 2025 Inspiration Déco | Site personnel affilié Amazon</p>
-  </footer>
-</body>
+  </footer>  <script>
+    // Redirige automatiquement à la catégorie avec animation (ex. Scroll or Expand)
+    document.querySelectorAll('.card').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        window.location.href = link.getAttribute('href');
+      });
+    });
+  </script></body>
 </html>
